@@ -1,0 +1,96 @@
+@media screen and (max-width: 600px) { 
+    nav {
+        padding-top: 0 !important;
+    }
+    nav a {
+        padding-top: 0 !important;
+    }
+    .navbar ul {
+        background: linear-gradient(100.47deg, #542798 0%, #D81840 27%, #DA3A3B 60%, #F17F06 100%)
+    }
+    .caption h1 {
+        display: none;
+    }
+    h1 {
+        font-size: 32px !important;
+    }
+    h2 {
+        font-size: 28px !important;
+    }
+    .fa-angle-left{
+        font-size: 40px !important;
+        padding: 0px 15px 2px 10px;
+    }
+    .fa-angle-right {
+        font-size: 40px !important;
+        padding: 0px 10px 2px 15px;
+    }
+    .our-services h1, .our-clients h1, .portfolio h1, .review h1, .contact-us h1 {
+        width: 70% !important;
+        letter-spacing: 0;
+    }
+    .our-services h2 {
+        letter-spacing: 2px;
+    }
+    input {
+        width: 94%;
+    }
+    .our-services, .our-clients, .portfolio, .review, .contact-us {
+        padding-top: 70px;
+    }
+    .demo {
+        padding: 0;
+    }
+    .our-services h2 {
+        margin-top: 20px;
+        font-size: 28px;
+    }
+    .our-services img {
+        margin-top: 10px;
+    }
+    .our-services h3 {
+        margin: 0;
+        padding: 5px;
+        font-size: 24px;
+        text-align: justify;
+    }
+    .our-clients h1, .portfolio h1, .review h1, .contact-us h1{
+        margin-bottom: 54px;
+    }
+    .our-clients img {
+        margin: 10px;
+    }
+    .review-item {
+        text-align: center;
+        height: 470px;
+    }
+    .caption2 {
+        margin: 0px 5px 30px 5px;
+        left: 0px !important;
+        right: 0px !important;
+    }
+    .review-box h2 {
+        padding: 50px 0 20px 0 !important;
+        font-size: 10vw !important;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .caption h1 {
+        display: none;
+    }
+    .our-services h1, .our-clients h1, .portfolio h1, .review h1, .contact-us h1 {
+        width: 40%;
+        letter-spacing: 0;
+    }
+}
+@media only screen and (max-width: 1200px) { 
+    nav {
+        padding-top: 0 !important;
+    }
+    nav a {
+        padding-top: 0 !important;
+    }
+    .navbar ul {
+        background: linear-gradient(100.47deg, #542798 0%, #D81840 27%, #DA3A3B 60%, #F17F06 100%)
+    }
+}

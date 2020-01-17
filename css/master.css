@@ -1,5 +1,8 @@
 * {
+    padding: 0;
+    margin: 0;
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -7,6 +10,11 @@
     padding-left: 0 !important;
     height: 70px;
     background: linear-gradient(100.47deg, #542798 0%, #D81840 27%, #DA3A3B 60%, #F17F06 100%)
+}
+.navbar-toggler {
+    color: #fff !important;
+    font-size: 36px !important;
+    border: none !important;
 }
 .navbar-brand img{
     max-height: 70px;
