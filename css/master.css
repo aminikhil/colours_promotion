@@ -49,9 +49,9 @@
 }
 
 /* welcome */
-.welcome {
+/* .welcome {
     margin-top: 72px !important;
-}
+} */
 
 .welcome img {
     max-height: 100vh !important;
@@ -115,7 +115,7 @@
 }
 
 .demo video {
-    height: 284px;
+    /* height: 284px; */
     width: 511px;
 }
 
@@ -138,21 +138,24 @@
     padding: 10px;
 }
 .our-services h2 {
+    font-weight: 400;
     margin-top: 89px;
     color: #000;
     font-size: 48px;
-    font-weight: 400;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     line-height: 60px;
 }
 .our-services h3 {
     margin-top: 98px;
-    font-weight: 300;
-    color: #222;
+    font-weight: 100;
+    color: rgb(122, 117, 117);
     font-family: "Quicksand Medium";
-    font-size: 32px;
+    font-size: 28px;
     line-height: 50px;
     padding: 0 50px 0 50px;
+}
+.our-services .hidden {
+    display: none;
 }
 
 /* our clients */
@@ -161,6 +164,10 @@
 }
 .client-row2 {
     padding-top: 100px;
+}
+
+.portfolio img {
+    max-height: 100vh;
 }
 
 /* review */
@@ -261,18 +268,18 @@ textarea {
 }
 .footer {
     color: #fff;
-    padding-top: 50px;
+    padding-top: 20px;
     background: linear-gradient(43.81deg, #FE4363 0%, rgba(217,41,61,0.91) 0%, #F8C750 100%);
 }
 .footer img {
     max-height: 108px;
 }
 .footer h4{
-    padding-top: 25px;
+    /* padding-top: 25px; */
     font-family: "Quicksand Medium";
     font-size: 28px;
     line-height: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .footer ul {
     list-style: none;
@@ -312,10 +319,21 @@ textarea {
     background-color: #EC3237;
 }
 .social-links img {
-    width: 50px;
+    width: 40px;
     margin: 10px;
 }
 .footer .cp {
-    padding-top: 50px;
+    padding-top: 10px;
 }
+.cp a {
+    color: #fff;
+}
+.cp a:hover {
+    color: #00C0FF;
+}
+/* .carousel-inner .carousel-item {
+    transition: -webkit-transform 1s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 1s ease;
+  } */
 

@@ -5,11 +5,21 @@
     nav a {
         padding-top: 0 !important;
     }
-    .navbar ul {
+    /* .navbar ul {
         background: linear-gradient(100.47deg, #542798 0%, #D81840 27%, #DA3A3B 60%, #F17F06 100%)
-    }
+    } */
     .caption h1 {
         display: none;
+    }
+    .demo {
+        padding-bottom: 20px !important;
+    }
+    .demo h1 {
+        line-height: 60px;
+    }
+    .demo h4{
+        padding-top: 0px;
+        font-size: 16px;
     }
     h1 {
         font-size: 32px !important;
@@ -17,14 +27,14 @@
     h2 {
         font-size: 28px !important;
     }
-    .fa-angle-left{
+    /* .fa-angle-left{
         font-size: 40px !important;
         padding: 0px 15px 2px 10px;
     }
     .fa-angle-right {
         font-size: 40px !important;
         padding: 0px 10px 2px 15px;
-    }
+    } */
     .our-services h1, .our-clients h1, .portfolio h1, .review h1, .contact-us h1 {
         width: 70% !important;
         letter-spacing: 0;
@@ -36,7 +46,7 @@
         width: 94%;
     }
     .our-services, .our-clients, .portfolio, .review, .contact-us {
-        padding-top: 70px;
+        padding-top: 20px;
     }
     .demo {
         padding: 0;
@@ -44,6 +54,7 @@
     .our-services h2 {
         margin-top: 20px;
         font-size: 28px;
+        letter-spacing: 1px;
     }
     .our-services img {
         margin-top: 10px;
@@ -51,8 +62,8 @@
     .our-services h3 {
         margin: 0;
         padding: 5px;
-        font-size: 24px;
-        text-align: justify;
+        font-size: 16px;
+        line-height: 25px;
     }
     .our-clients h1, .portfolio h1, .review h1, .contact-us h1{
         margin-bottom: 54px;
@@ -73,6 +84,19 @@
         padding: 50px 0 20px 0 !important;
         font-size: 10vw !important;
     }
+    .contact-us iframe {
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    .contact-us h2 {
+        text-align: center;
+    }
+    .contact-us h3 {
+        font-size: 24px;
+    }
+    .contact-us h4 {
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width: 1200px){
     .caption h1 {
@@ -90,7 +114,31 @@
     nav a {
         padding-top: 0 !important;
     }
-    .navbar ul {
-        background: linear-gradient(100.47deg, #542798 0%, #D81840 27%, #DA3A3B 60%, #F17F06 100%)
+    .navbar-expand-xl {
+        height: auto;
+        padding-bottom: 0px !important;
+    }
+    .navbar-brand {
+        padding-bottom: 0 !important;
+    }
+    .navbar ul{
+        padding-bottom: 50px !important;
+    }
+    .carousel-indicators li{
+        padding: 5px !important;
+        width: 1px !important;
+    }
+    .carousel-indicators {
+        margin-bottom: 0;
+        /* display: none; */
+    }
+    .hidden {
+        display: block !important;
+    }
+    .mob-hidden {
+        display: none;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        display: none !important;
     }
 }
