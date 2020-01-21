@@ -2,7 +2,7 @@
 window.onscroll = function () {
     scrollFunction()
   };
-  //navigation bar color change on scroll
+
   function scrollFunction() {
   
   //  for navigation through page
@@ -10,8 +10,7 @@ window.onscroll = function () {
       clearTimeout($.data(this, 'scrollTimer'));
       $.data(this, 'scrollTimer', setTimeout(function () {
         // do something
-        if (($(this).scrollTop() >= $('#home').position().top - 1) &&
-          ($(this).scrollTop() < $('#services').position().top - 1)) {
+        if (($(this).scrollTop() < $('#services').position().top - 1)) {
           onClickNav('home');
         } else if (($(this).scrollTop() >= $('#services').position().top - 1) &&
           ($(this).scrollTop() < $('#our_clients').position().top - 1)) {
@@ -20,8 +19,11 @@ window.onscroll = function () {
           ($(this).scrollTop() < $('#portfolio').position().top - 1)) {
           onClickNav('our_clients');
         } else if (($(this).scrollTop() >= $('#portfolio').position().top - 1) &&
-          ($(this).scrollTop() < $('#contact_us').position().top - 1)) {
+          ($(this).scrollTop() < $('#about_us').position().top - 1)) {
           onClickNav('portfolio');
+        }  else if (($(this).scrollTop() >= $('#about_us').position().top - 1) &&
+          ($(this).scrollTop() < $('#contact_us').position().top - 1)) {
+          onClickNav('about_us');
         } else if ($(this).scrollTop() >= $('#contact_us').position().top - 1) {
           onClickNav('contact_us');
         }
@@ -34,6 +36,7 @@ window.onscroll = function () {
     document.getElementById("nav_services").classList.remove("active-home");
     document.getElementById("nav_ourclients").classList.remove("active-home");
     document.getElementById("nav_portfolio").classList.remove("active-home");
+    document.getElementById("nav_aboutus").classList.remove("active-home");
     document.getElementById("nav_contactus").classList.remove("active-home");
   
     if (nav == "home") {
@@ -44,11 +47,14 @@ window.onscroll = function () {
       document.getElementById("nav_ourclients").classList.add("active-home");
     } else if (nav == "portfolio") {
       document.getElementById("nav_portfolio").classList.add("active-home");
+    } else if (nav == "about_us") {
+      document.getElementById("nav_aboutus").classList.add("active-home");
     } else if (nav == "contact_us") {
       document.getElementById("nav_contactus").classList.add("active-home");
     }
   }
   
+  // validate contact us form
   function validate() {
     var x = document.forms["contact_us_form"]["name"].value;
     if (x == "") {

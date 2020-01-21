@@ -49,10 +49,6 @@
 }
 
 /* welcome */
-/* .welcome {
-    margin-top: 72px !important;
-} */
-
 .welcome img {
     max-height: 100vh !important;
 }
@@ -62,6 +58,9 @@
     top: 30%;
     color: #fff;
     margin: 0 15% 0 15%;
+}
+.caption {
+    animation: 3s ease-out 0s 1 welcomeAnim;
 }
 .bd-example .caption h2 {
     font-size: 40px;
@@ -100,6 +99,7 @@
     padding-bottom: 94px;
     background: linear-gradient(50.81deg, #FE4363 0%, rgba(217,41,61,0.91) 0%, #F8C750 100%);
     color: #fff;
+    animation: 3s ease-out 0s 1 welcomeAnim;
 }
 .demo h1 {
     font-size: 68px;
@@ -115,15 +115,14 @@
 }
 
 .demo video {
-    /* height: 284px; */
     width: 511px;
 }
 
 /* our services */
-.our-services, .our-clients, .portfolio, .review, .contact-us {
+.our-services, .our-clients, .portfolio, .review, .contact-us, .about_us {
     padding-top: 109px;
 }
-.our-services h1, .our-clients h1, .portfolio h1, .review h1, .contact-us h1 {
+.our-services h1, .our-clients h1, .portfolio h1, .review h1, .contact-us h1, .about_us h1 {
     color: #fff;
     font-family: "Quicksand Medium";
     font-size: 32px;
@@ -136,6 +135,7 @@
 .our-services img {
     margin-top: 79px;
     padding: 10px;
+    
 }
 .our-services h2 {
     font-weight: 400;
@@ -148,7 +148,7 @@
 .our-services h3 {
     margin-top: 98px;
     font-weight: 100;
-    color: rgb(122, 117, 117);
+    color: #2b2b2b;
     font-family: "Quicksand Medium";
     font-size: 28px;
     line-height: 50px;
@@ -156,6 +156,14 @@
 }
 .our-services .hidden {
     display: none;
+}
+@keyframes welcomeAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* our clients */
@@ -168,6 +176,51 @@
 
 .portfolio img {
     max-height: 100vh;
+}
+.portfolio-link {
+    float: right;
+    margin: 50px;
+    width: auto;
+    font-style: none;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 36px;
+    color: #fff;
+    text-decoration: none !important;
+    font-weight: 700;
+    background-color: rgba(51,153,255,0.68);
+    border: 2px solid;
+}
+.portfolio-link:hover {
+    border: 2px solid  rgba(51,153,255,0.68);
+    color:  rgba(51,153,255,0.68);
+    background-color: #fff;
+}
+
+/* about us */
+.about_us p {
+    text-align: justify;
+    margin-top: 98px;
+    font-weight: 100;
+    color: #2b2b2b;
+    font-family: "Quicksand Medium";
+    font-size: 24px;
+}
+.about_us h4 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 89px;
+    color: #000;
+    font-size: 48px;
+    letter-spacing: 4px;
+    line-height: 60px;
+}
+.about_us ul {
+    margin-top: 58px;
+    font-weight: 100;
+    color: #2b2b2b;
+    font-family: "Quicksand Medium";
+    font-size: 24px;
 }
 
 /* review */
@@ -264,8 +317,15 @@ textarea {
     color: #fff;
     font-weight: 700;
     background-color: rgba(51,153,255,0.68);
-    border: none !important;
+    border: 2px solid;
 }
+.input-sub:hover {
+    border: 2px solid  rgba(51,153,255,0.68);
+    color:  rgba(51,153,255,0.68);
+    background-color: #fff;
+}
+
+/* footer */
 .footer {
     color: #fff;
     padding-top: 20px;
@@ -275,7 +335,6 @@ textarea {
     max-height: 108px;
 }
 .footer h4{
-    /* padding-top: 25px; */
     font-family: "Quicksand Medium";
     font-size: 28px;
     line-height: 30px;
@@ -297,27 +356,6 @@ textarea {
     line-height: 25px;
     padding-bottom: 20px;
 }
-.footer-subs {
-    padding-bottom: 5px;
-}
-.footer-but {
-    padding-bottom: 20px;
-}
-.footer-but button{
-    border-radius: 36px;
-    background-color: #F2F2F2;
-    border: none;
-    padding: 20px;
-    width: 200px;
-    color: #828282;
-    font-family: "Quicksand Medium";
-    font-size: 26px;
-    line-height: 28px;
-}
-.footer-but button:hover {
-    color: #fff;
-    background-color: #EC3237;
-}
 .social-links img {
     width: 40px;
     margin: 10px;
@@ -331,9 +369,4 @@ textarea {
 .cp a:hover {
     color: #00C0FF;
 }
-/* .carousel-inner .carousel-item {
-    transition: -webkit-transform 1s ease;
-    transition: transform 0.2s ease;
-    transition: transform 0.2s ease, -webkit-transform 1s ease;
-  } */
 
