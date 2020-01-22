@@ -4,7 +4,6 @@
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
 }
-
 /* navbar */
 .navbar {
     padding-left: 0 !important;
@@ -100,6 +99,7 @@
     background: linear-gradient(50.81deg, #FE4363 0%, rgba(217,41,61,0.91) 0%, #F8C750 100%);
     color: #fff;
     animation: 3s ease-out 0s 1 welcomeAnim;
+    animation-play-state: paused;
 }
 .demo h1 {
     font-size: 68px;
@@ -116,6 +116,14 @@
 
 .demo video {
     width: 511px;
+}
+@keyframes welcomeAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* our services */
@@ -135,8 +143,8 @@
 .our-services img {
     margin-top: 79px;
     padding: 10px;
-    
 }
+
 .our-services h2 {
     font-weight: 400;
     margin-top: 89px;
@@ -157,13 +165,51 @@
 .our-services .hidden {
     display: none;
 }
-@keyframes welcomeAnim {
+#heading1, #heading2, #heading3, #heading4, #heading5, #heading6 {
+    transition-delay: 3s;
+    animation: 2s ease-out 0s 1 heading;
+    animation-play-state: paused;
+}
+
+@keyframes serImgAnim {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes serTxtAnim {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
+}
+@keyframes heading {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#our_ser_img1, #our_ser_img2, #our_ser_img3, #our_ser_img4, #our_ser_img5, #our_ser_img6, #our_ser_img7 {
+    /* display: none; */
+    transition-delay: 3s;
+    animation: 2s ease-out 0s 1 serImgAnim;
+    animation-play-state: paused;
+}
+#our_ser_txt1, #our_ser_txt2, #our_ser_txt3, #our_ser_txt4, #our_ser_txt5 {
+    /* display: none; */
+    transition-delay: 7s;
+    animation: 4s ease-out 0s 1 serTxtAnim;
+    animation-play-state: paused;
 }
 
 /* our clients */
