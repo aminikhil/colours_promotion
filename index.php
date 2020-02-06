@@ -52,6 +52,8 @@
                     <li data-target="#slider_images" data-slide-to="0" class="active"></li>
                     <li data-target="#slider_images" data-slide-to="1" class=""></li>
                     <li data-target="#slider_images" data-slide-to="2" class=""></li>
+                    <li data-target="#slider_images" data-slide-to="3" class=""></li>
+                    <li data-target="#slider_images" data-slide-to="4" class=""></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -62,10 +64,16 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/p4.jpeg" class="d-block w-100" alt="...">
+                        <img src="images/p12.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="images/slide2.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide5.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide6.jpeg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slider_images" role="button" data-slide="prev">
@@ -106,7 +114,7 @@
         <div class="container">
             <div class="row">
                 <div id="our_ser_img1" class="col-lg-6 col-md-12 col-sm-12">
-                    <img class="img-fluid" src="images/img1.svg" alt="">
+                    <img class="img-fluid" src="images/img1.png" alt="">
                 </div>
                 <div id="our_ser_txt1" class="col-lg-6 col-md-12 col-sm-12 text-center">
                     <h2>Mobile Van Advertisement</h2>
@@ -127,7 +135,7 @@
             </div>
             <div class="row">
                 <div id="our_ser_img4" class="col-lg-6 col-md-12 col-sm-12">
-                    <img class="img-fluid" src="images/img3.jpg" alt="">
+                    <img class="img-fluid" src="images/img17.png" alt="">
                 </div>
                 <div id="our_ser_txt3" class="col-lg-6 col-md-12 col-sm-12 text-center">
                     <h2>Audio Recording Advertisement</h2>
@@ -197,10 +205,10 @@
                         <img src="images/slide4.jpeg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slide5.jpeg" class="d-block w-100" alt="...">
+                        <img src="images/slide8.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/slide6.jpeg" class="d-block w-100" alt="...">
+                        <img src="images/slide9.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#slider_images1" role="button" data-slide="prev">
@@ -271,7 +279,7 @@
                         <div class="carousel-item review-item"> <img alt="Failed to load image!" src="images/p2.jpeg">
                             <div class="carousel-caption caption2">
                                 <h6>Rajeshbhau Rangari</h6>
-                                <small><b>Bhartiy Janta Party</b></small>
+                                <small><b>Bharatiya Janata Party</b></small>
                                 <p>आमच्यासारख्या लोकप्रतिनिधीनी पूर्वी लोकांसाठी समाजासाठी केलेली कामे. त्यांच्यापर्यंत टीव्ही वरील बातम्या किंवा वृत्तपत्राद्वारे पोहोचायची. पण आजच युग हे संगणक युग आहे. त्यामुळे लोक प्रसारमाध्यमे वापरतात. लोकप्रतिनिधी बॅनर
                                     होर्डिंग्ज बनवून किंवा मोबाईल व्हॅन द्वारे आपली कामे लोकांपर्यंत पोहोचवतात. या सगळ्यात मला Colors Promotion यांचं सहकार्य लाभलं. मी केलेल्या कामांचा खूप सुंदर प्रचार आणि प्रसार यांनी केला. याचा फायदा मला मागील निवडणुकीत
                                     झालाच त्याप्रमाणे इथून पुढेही होईल.</p>
@@ -317,7 +325,7 @@
                             </section>
                         </h4>
                     </div>
-                    <form action="" class="text-center">
+                    <form action="" class="text-center" method="post">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="tel" name="phone" placeholder="Phone" required><br>
                         <input class="input-email" type="email" name="email" placeholder="E-mail"><br>
@@ -349,7 +357,7 @@
         </div>
     </section>
     <?php
-      if($_POST["submit"]){
+      if(isset($_POST["submit"])){
         $message = "";
         $name = $_POST["name"];
         $email = $_POST["email"];
@@ -366,7 +374,7 @@
         $mail->Password="kaizen@dreambig";
 
         $mail->setFrom($email,$name);
-        $mail->addAddress("waykosn@gmail.com");
+        $mail->addAddress("shingadesejal03@gmail.com");
 
         $mail->isHTML(true);
         $mail->Subject="Enquiry From Site : " .$name;
