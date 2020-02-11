@@ -135,7 +135,7 @@
             </div>
             <div class="row">
                 <div id="our_ser_img4" class="col-lg-6 col-md-12 col-sm-12">
-                    <img class="img-fluid" src="images/img17.png" alt="">
+                    <img class="img-fluid" src="images/img17.jpg" alt="">
                 </div>
                 <div id="our_ser_txt3" class="col-lg-6 col-md-12 col-sm-12 text-center">
                     <h2>Audio Recording Advertisement</h2>
